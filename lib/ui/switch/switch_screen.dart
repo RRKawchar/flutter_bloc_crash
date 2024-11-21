@@ -39,7 +39,7 @@ class SwitchScreen extends StatelessWidget {
                 }),
               ],
             ),
-            SizedBox(height: 30),
+            const SizedBox(height: 30),
             BlocBuilder<SwitchBloc, SwitchState>(builder: (context, state) {
               return Container(
                 height: 200,
@@ -48,7 +48,7 @@ class SwitchScreen extends StatelessWidget {
                 ),
               );
             }),
-            SizedBox(height: 50),
+            const SizedBox(height: 50),
             BlocBuilder<SwitchBloc, SwitchState>(builder: (context, state) {
               return Slider(
                   value: state.slider,

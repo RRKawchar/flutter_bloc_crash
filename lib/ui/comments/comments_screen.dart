@@ -3,6 +3,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_bloc_demo_main/bloc/comments/comments_bloc.dart';
 import 'package:flutter_bloc_demo_main/bloc/comments/comments_events.dart';
 import 'package:flutter_bloc_demo_main/bloc/comments/comments_states.dart';
+import 'package:flutter_bloc_demo_main/bloc/counter/counter_bloc.dart';
+import 'package:flutter_bloc_demo_main/bloc/counter/counter_state.dart';
 import 'package:flutter_bloc_demo_main/utils/enums.dart';
 
 class CommentsScreen extends StatefulWidget {

@@ -8,7 +8,9 @@ import 'package:flutter_bloc_demo_main/bloc/switch/switch_bloc.dart';
 import 'package:flutter_bloc_demo_main/bloc/todo/todo_bloc.dart';
 import 'package:flutter_bloc_demo_main/repository/favorite_repository.dart';
 import 'package:flutter_bloc_demo_main/ui/comments/comments_screen.dart';
+import 'package:flutter_bloc_demo_main/ui/counter/counter_screen.dart';
 import 'package:flutter_bloc_demo_main/ui/favorite/favorite_screen.dart';
+import 'package:flutter_bloc_demo_main/ui/login/login_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +23,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-        BlocProvider(create:(_)=> CounterBloc()),
         BlocProvider(create:(_)=> SwitchBloc()),
         BlocProvider(create:(_)=> ImagePickerBloc()),
         BlocProvider(create:(_)=> TodoBloc()),
@@ -37,7 +38,7 @@ class MyApp extends StatelessWidget {
             brightness: Brightness.dark,
             useMaterial3: true,
           ),
-          home: CommentsScreen()
+          home: LoginScreen()
       ),
     );
   }
